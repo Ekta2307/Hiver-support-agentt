@@ -1,0 +1,682 @@
+[
+  {
+    "calibration_id": 1,
+    "sample_id": 1,
+    "pair_id": 1085953,
+    "customer_text": "Its sooo annoying that @115821 left my package at the main office of my apts. like yall didnt deliver it yesterday when it was suppose",
+    "reply_text": "@363009 Oh my Kirito!  Can you tell us who the carrier is? You can view your orders here: https://t.co/XJnbb8dfdy ^SY",
+    "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 4,
+      "actionability": 5,
+      "safety_pii": 4,
+      "overall_quality": 4.5
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Includes actionable link. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 2,
+    "sample_id": 6,
+    "pair_id": 971853,
+    "customer_text": "@115850 My order 171-4078604-8109968\nIs not been delivered to me, the committed date was 13th october 2017. Support is good for nothing.",
+    "reply_text": "@350548 Please don't provide your order details, we consider it to be personal information. Our page is visible to the public. ^KA",
+    "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 4,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 4.0
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 3,
+    "sample_id": 11,
+    "pair_id": 1070095,
+    "customer_text": "@AmazonHelp It says “delivered in mailbox” for all three books.  NOT in mailbox.  Very urgent that I get these books",
+    "reply_text": "@349328 We don't have acct access via Twitter, so please contact us here so we can address this together: https://t.co/hApLpMlfHN ^KN",
+    "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 4,
+      "actionability": 5,
+      "safety_pii": 4,
+      "overall_quality": 4.5
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Includes actionable link. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 4,
+    "sample_id": 16,
+    "pair_id": 814233,
+    "customer_text": "@AmazonHelp Delivery wise, what's the difference between getting something delivered home and getting something delivered to work?",
+    "reply_text": "@313937 We're here to help! I don't understand exactly what you're asking, could you clarify your question a bit more? ^JE",
+    "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 5,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 4.3
+    },
+    "human_critique": "Historical Amazon reply shows strong empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 5,
+    "sample_id": 21,
+    "pair_id": 1039177,
+    "customer_text": "@AmazonHelp my order status is delivered but i did not receive my package. I checked my mailbox its not in there. What do i do",
+    "reply_text": "@253648 I'm so sorry you haven't received your package. Have you followed the steps here: https://t.co/DGMn3aYSdi ?^DG",
+    "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 5,
+      "actionability": 5,
+      "safety_pii": 4,
+      "overall_quality": 4.8
+    },
+    "human_critique": "Historical Amazon reply shows strong empathy. Includes actionable link. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 6,
+    "sample_id": 26,
+    "pair_id": 728112,
+    "customer_text": "@115830 month on and still new dates for (same day) prime delivery. Have tried to cancel 5 times and contacted customer service 3 times. https://t.co/Vx3BPKNZCJ",
+    "reply_text": "@294423 Hi, sorry to hear that, what were you advised when you contacted us? ^JJ",
+    "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 5,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 4.3
+    },
+    "human_critique": "Historical Amazon reply shows strong empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 7,
+    "sample_id": 31,
+    "pair_id": 974822,
+    "customer_text": "Dear @115850 my order no 406-2266058-4166767, ur courier boy didn't contacted me, delivery date was 12 Oct bt still waiting...",
+    "reply_text": "@351181 Also, please don't provide the order details, as we consider it personal information. ^HT",
+    "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 4,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 4.0
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 8,
+    "sample_id": 36,
+    "pair_id": 854376,
+    "customer_text": "@AmazonHelp I have contacted @115821.IN 3 times post the delay of delivery. You guys speak and assure a lot but do nothing.",
+    "reply_text": "@322920 We have received your details, we are working on it. We'll get back to you soon with an update. ^SY",
+    "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 4,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 4.0
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 9,
+    "sample_id": 41,
+    "pair_id": 921525,
+    "customer_text": "@132995 I didn't even get a single call from @115850  for this delivery this is happening third time in this week. https://t.co/qYh4n1k6gK",
+    "reply_text": "@206718 We ensure to deliver all order by the delivery date. Have we missed the same on the order? (1/2) ^CB",
+    "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 4,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 4.0
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 10,
+    "sample_id": 46,
+    "pair_id": 727811,
+    "customer_text": "@AmazonHelp Yes, that's why she said I would be getting my refund. Maybe you could at least flag that seller as the crook they are, never responded.",
+    "reply_text": "@294361 We're unable to access your account from here. Please get in touch here: https://t.co/hApLpMlfHN and we'll be happy to help. ^RS",
+    "ground_truth_intent": "RETURN_REFUND_REPLACEMENT",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 4,
+      "actionability": 5,
+      "safety_pii": 4,
+      "overall_quality": 4.5
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Includes actionable link. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 11,
+    "sample_id": 51,
+    "pair_id": 944139,
+    "customer_text": "@AmazonHelp Couple of weeks ago i ordered a DVD &amp; was sposed to b delvd on thur then fri then on mon &amp; it just came from KY so the return address said",
+    "reply_text": "@343867 Thanks for the info. Have you contacted us so we could document your carrier feedback: https://t.co/EKXRLsnxJu? ^GG",
+    "ground_truth_intent": "RETURN_REFUND_REPLACEMENT",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 4,
+      "actionability": 5,
+      "safety_pii": 4,
+      "overall_quality": 4.5
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Includes actionable link. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 12,
+    "sample_id": 56,
+    "pair_id": 852828,
+    "customer_text": "@AmazonHelp If it’s a week past the return window, can I still exchange??? Please say yes",
+    "reply_text": "@322593 Our return policy is up to 30 days. You can find more information on this link here: https://t.co/UdWyf3l8UP ^VS",
+    "ground_truth_intent": "RETURN_REFUND_REPLACEMENT",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 4,
+      "actionability": 5,
+      "safety_pii": 4,
+      "overall_quality": 4.5
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Includes actionable link. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 13,
+    "sample_id": 61,
+    "pair_id": 987818,
+    "customer_text": "@AmazonHelp Hi I had an https://t.co/GD2YYEdlxm student prime account and that got automatically renewed. Plz cancel that and refund my money! https://t.co/8HM0n9tXPo",
+    "reply_text": "@354052 Sorry to see that. Please contact us here: https://t.co/hApLpMlfHN by chat so an agent can look into this for you. ^JJ",
+    "ground_truth_intent": "RETURN_REFUND_REPLACEMENT",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 5,
+      "actionability": 5,
+      "safety_pii": 4,
+      "overall_quality": 4.8
+    },
+    "human_critique": "Historical Amazon reply shows strong empathy. Includes actionable link. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 14,
+    "sample_id": 66,
+    "pair_id": 674260,
+    "customer_text": "@126705 please could you start a lost item for 3 items I sent as you have decided not to move my items from Tyneside and is out of the delivery timescale of 2-3 days! @AmazonHelp won’t go for lost item or refund me so you can!no wonder @147630 wants rm to be public owned",
+    "reply_text": "@243944 Hi Barry! What is the current status on the tracking?https://t.co/aaDyEz1VgE ^CN",
+    "ground_truth_intent": "RETURN_REFUND_REPLACEMENT",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 4,
+      "actionability": 5,
+      "safety_pii": 4,
+      "overall_quality": 4.5
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Includes actionable link. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 15,
+    "sample_id": 71,
+    "pair_id": 734157,
+    "customer_text": "@118919 I have purchased Lenovo k8 note ....  But heating mobile I want to return it what is process",
+    "reply_text": "@295654 We're responding to your query via DM. Would request you to have a look at it. ^AB",
+    "ground_truth_intent": "RETURN_REFUND_REPLACEMENT",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 4,
+      "actionability": 4,
+      "safety_pii": 5,
+      "overall_quality": 4.5
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 16,
+    "sample_id": 76,
+    "pair_id": 862440,
+    "customer_text": "Thanks @115830 for leaving my parcel outside and marking as delivered.. not like it could've been stolen/damaged 🙄 @AmazonHelp #badservice https://t.co/tCk9jdu5et",
+    "reply_text": "@324788 I'm sorry for the trouble! We'd like to take a look into this with you. Please reach us here: https://t.co/JzP7hlA23B ^KP",
+    "ground_truth_intent": "RETURN_REFUND_REPLACEMENT",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 5,
+      "actionability": 5,
+      "safety_pii": 4,
+      "overall_quality": 4.8
+    },
+    "human_critique": "Historical Amazon reply shows strong empathy. Includes actionable link. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 17,
+    "sample_id": 81,
+    "pair_id": 1057375,
+    "customer_text": "@115850: Order no.:403-0082364-6927522.The Lakme kajal pkt was torn n kajal was not there(appears stolen).I need replacement n not refund. https://t.co/gVHx61ei1v",
+    "reply_text": "@369663 We're sorry about that, Aritra. Please report this here: https://t.co/vlvfJr4nN9 and we'll look into this right away. ^HK",
+    "ground_truth_intent": "RETURN_REFUND_REPLACEMENT",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 5,
+      "actionability": 5,
+      "safety_pii": 4,
+      "overall_quality": 4.8
+    },
+    "human_critique": "Historical Amazon reply shows strong empathy. Includes actionable link. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 18,
+    "sample_id": 86,
+    "pair_id": 970558,
+    "customer_text": "@115821 I try to change my new  number in app but showing in error you have already registered another's account..will how can track myorder",
+    "reply_text": "@350309 Please report this to our support team here: https://t.co/vlvfJr4nN9 and we'll assist you further with it. ^RS",
+    "ground_truth_intent": "ACCOUNT_BILLING_SECURITY",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 4,
+      "actionability": 5,
+      "safety_pii": 4,
+      "overall_quality": 4.5
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Includes actionable link. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 19,
+    "sample_id": 91,
+    "pair_id": 894659,
+    "customer_text": "@AmazonHelp Whenever I log in after clicking that link, it tells me that I've never placed an order on my account.",
+    "reply_text": "@332429 I'm sorry, try this link instead: https://t.co/c0z1GSOPqV ^MB",
+    "ground_truth_intent": "ACCOUNT_BILLING_SECURITY",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 5,
+      "actionability": 5,
+      "safety_pii": 4,
+      "overall_quality": 4.8
+    },
+    "human_critique": "Historical Amazon reply shows strong empathy. Includes actionable link. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 20,
+    "sample_id": 96,
+    "pair_id": 991702,
+    "customer_text": "@AmazonHelp i need help with a blocked account,no fax is readible for you . What I do?",
+    "reply_text": "@199748 Sorry for the frustration, Sandra! What website do you have an account on? Is it .com, .co.uk, .ca, .in, etc? ^JZ",
+    "ground_truth_intent": "ACCOUNT_BILLING_SECURITY",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 4,
+      "tone_empathy": 5,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 4.0
+    },
+    "human_critique": "Historical Amazon reply shows strong empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 21,
+    "sample_id": 101,
+    "pair_id": 1101687,
+    "customer_text": "Hey @115850. Haven't been able to place any orders since morning. Tried different products &amp; payment methods. Please help.",
+    "reply_text": "@379951 here:https://t.co/vlvfJr4nN9 We'll have this checked &amp; resolved soon. 2/2 ^EM",
+    "ground_truth_intent": "ACCOUNT_BILLING_SECURITY",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 4,
+      "actionability": 5,
+      "safety_pii": 4,
+      "overall_quality": 4.5
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Includes actionable link. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 22,
+    "sample_id": 106,
+    "pair_id": 765744,
+    "customer_text": "@AmazonHelp @115850 apparently that Amazon delivery person number belongs to some 'Chappal Wala' n when I take this issue up wid customer care they cancel my order reason (non payment) seriously ? It's COD order n non payment ?",
+    "reply_text": "@303005 I understand your concern about the delivery of your product. Did you happen to report this to our support team? If no, please contact us here: https://t.co/vlvfJr4nN9 so we can assist you.^PJ",
+    "ground_truth_intent": "ACCOUNT_BILLING_SECURITY",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 5,
+      "actionability": 5,
+      "safety_pii": 4,
+      "overall_quality": 4.8
+    },
+    "human_critique": "Historical Amazon reply shows strong empathy. Includes actionable link. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 23,
+    "sample_id": 111,
+    "pair_id": 796478,
+    "customer_text": "@115850  I ordered with delivery charged but it did not get delivered till now  #Delivery #AmazonIndia #LateLate",
+    "reply_text": "@309923 Sorry for the delay. Please report this to our support team here: https://t.co/vlvfJr4nN9 for immediate assistance. ^JC",
+    "ground_truth_intent": "ACCOUNT_BILLING_SECURITY",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 5,
+      "actionability": 5,
+      "safety_pii": 4,
+      "overall_quality": 4.8
+    },
+    "human_critique": "Historical Amazon reply shows strong empathy. Includes actionable link. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 24,
+    "sample_id": 116,
+    "pair_id": 713321,
+    "customer_text": "@AmazonHelp I reach out direct and get fast service, but it's just become a hassle again, can't really justify a monthly subscription fee for that.",
+    "reply_text": "@290615 I'm sorry we've let you down; that's never our intent! Have you already contacted us to explore options to resolve this? ^MV",
+    "ground_truth_intent": "ACCOUNT_BILLING_SECURITY",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 4,
+      "tone_empathy": 5,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 4.0
+    },
+    "human_critique": "Historical Amazon reply shows strong empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 25,
+    "sample_id": 121,
+    "pair_id": 840903,
+    "customer_text": "@AmazonHelp can you please check with resolution team what was gone wrong and how many times #disgusting to share info again &amp; again",
+    "reply_text": "@158494 If you've shared the details, out team must have reverted. Kindly check the same here: https://t.co/ubzNHWZvL2 ^SG",
+    "ground_truth_intent": "SERVICE_COMPLAINT_FEEDBACK",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 4,
+      "actionability": 5,
+      "safety_pii": 4,
+      "overall_quality": 4.5
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Includes actionable link. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 26,
+    "sample_id": 126,
+    "pair_id": 1037229,
+    "customer_text": "@AmazonHelp I’ve just had a very frustrating/unhelpful conv with customer services concerning a faulty product and have come away less unsure of whether it’s been dealt with than before I spoke to him. The communication was terrible",
+    "reply_text": "@240190 Hi Emma! Apologies for the trouble this has caused. What was advised when you contacted?^CN",
+    "ground_truth_intent": "SERVICE_COMPLAINT_FEEDBACK",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "human_scores": {
+      "groundedness": 4,
+      "tone_empathy": 4,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 3.8
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 27,
+    "sample_id": 131,
+    "pair_id": 1101877,
+    "customer_text": "Hey @115821 &amp; @Amazonhelp I've now spoken to 4 reps and my security problem isn't solved. Can I please get a manager to contact me? TY",
+    "reply_text": "@380002 We're happy to help, Cindy! Without providing account info, could you tell us more details about what's going on? ^ML",
+    "ground_truth_intent": "SERVICE_COMPLAINT_FEEDBACK",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "human_scores": {
+      "groundedness": 4,
+      "tone_empathy": 4,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 3.8
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 28,
+    "sample_id": 136,
+    "pair_id": 735665,
+    "customer_text": "@120533 looting money and disappointing customers all the time. Worst service ever!",
+    "reply_text": "@295986 It is never our intention to cause inconvenience to our valued customer. Could you tell us what went wrong? ^MJ",
+    "ground_truth_intent": "SERVICE_COMPLAINT_FEEDBACK",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 4,
+      "tone_empathy": 4,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 3.8
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 29,
+    "sample_id": 141,
+    "pair_id": 725267,
+    "customer_text": "@AmazonHelp A lot of fraud can take place in 48 hours!!!  Even the supervisor was clueless.",
+    "reply_text": "@164420 Please let us know if you haven't received any correspondence within that time frame. 2/2 ^GG",
+    "ground_truth_intent": "SERVICE_COMPLAINT_FEEDBACK",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 4,
+      "tone_empathy": 4,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 3.8
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 30,
+    "sample_id": 146,
+    "pair_id": 921520,
+    "customer_text": "@115851 @115850  worst service.. don't take care of customer problems. I did complain many times but all in vain. Totally disappointed.",
+    "reply_text": "@172449 I'm sorry you're upset with us. Could you please let us know what happened? ^HA",
+    "ground_truth_intent": "SERVICE_COMPLAINT_FEEDBACK",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 4,
+      "tone_empathy": 5,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 4.0
+    },
+    "human_critique": "Historical Amazon reply shows strong empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 31,
+    "sample_id": 151,
+    "pair_id": 726160,
+    "customer_text": "@AmazonHelp no more reply going to lodge a complaint in consumer court.m nt free to respond u per day..@115851 shame on ur services https://t.co/gyXbSI7QHX",
+    "reply_text": "@164814 Sad to know you feel this way. In case you change your mind please feel free to revert to our email for any further assistance ^AB",
+    "ground_truth_intent": "SERVICE_COMPLAINT_FEEDBACK",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 4,
+      "tone_empathy": 4,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 3.8
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 32,
+    "sample_id": 156,
+    "pair_id": 1085985,
+    "customer_text": "@AmazonHelp there is nothing about not finding the wifi it isnt even picking up any wifi",
+    "reply_text": "@376169 I'm sorry for the trouble! Are you able to connect any other devices to your WiFi like a phone or computer? Keep us posted! ^SD",
+    "ground_truth_intent": "PRODUCT_DEVICE_TECHNICAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "human_scores": {
+      "groundedness": 4,
+      "tone_empathy": 5,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 4.0
+    },
+    "human_critique": "Historical Amazon reply shows strong empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 33,
+    "sample_id": 161,
+    "pair_id": 856928,
+    "customer_text": "My friend's son asked @115821's Alexa what's a black widow...and this was the response. #TechFail https://t.co/kdMh4fzy5n",
+    "reply_text": "@317645 Thank you for bringing this to our attention! We've escalated this internally to the appropriate department. ^KN",
+    "ground_truth_intent": "PRODUCT_DEVICE_TECHNICAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "human_scores": {
+      "groundedness": 4,
+      "tone_empathy": 4,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 3.8
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 34,
+    "sample_id": 166,
+    "pair_id": 934344,
+    "customer_text": "@AmazonHelp Thanks for the update.\n\nI understand, Amazon tries their best to reach perfection.\n\nJust a suggestion for improvement. 😊😊",
+    "reply_text": "@341641 You're always more than welcome. Keep them coming. ^CB",
+    "ground_truth_intent": "PRODUCT_DEVICE_TECHNICAL",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "human_scores": {
+      "groundedness": 4,
+      "tone_empathy": 4,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 3.8
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 35,
+    "sample_id": 171,
+    "pair_id": 782705,
+    "customer_text": "@115821 @115830 hey. Still waiting for the order. Any update?",
+    "reply_text": "@124407 Thanks for reaching out to us, Sameer! We're here to help. What was the delivery date given in your order confirmation? ^VB",
+    "ground_truth_intent": "PRODUCT_DEVICE_TECHNICAL",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 4,
+      "tone_empathy": 4,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 3.8
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 36,
+    "sample_id": 176,
+    "pair_id": 726959,
+    "customer_text": "@AmazonHelp @115821 @115850  Still waiting for invite to buy Echo,Could you please share the invite,Eagerly waiting for the echo#Invite",
+    "reply_text": "@294134 We send a limited number of invitations each week to customers, so keep an eye on your inbox. ^GS",
+    "ground_truth_intent": "PRODUCT_DEVICE_TECHNICAL",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 4,
+      "tone_empathy": 4,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 3.8
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 37,
+    "sample_id": 181,
+    "pair_id": 1052373,
+    "customer_text": "@AmazonHelp Is there any concern team for revert",
+    "reply_text": "@368418 We'll be happy to help. Kindly share your details over the link we had shared. Once done we can conduct our investigation. ^CB",
+    "ground_truth_intent": "GENERAL_INQUIRY_POLICY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "human_scores": {
+      "groundedness": 4,
+      "tone_empathy": 4,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 3.8
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 38,
+    "sample_id": 186,
+    "pair_id": 735338,
+    "customer_text": "@amazonhelp Buongiorno ho problemi con la ricezione di un ordine, mi risulta in giacenza dal 2 ottobre il numero dell’ordine è 407-8796114-6231519",
+    "reply_text": "@295906 Mi spiace! Da Twitter non ho modo di verificare, ma i miei colleghi sono a tua disposizione da qui: https://t.co/BWOgq7lzE0. ^CS",
+    "ground_truth_intent": "GENERAL_INQUIRY_POLICY",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 4,
+      "actionability": 5,
+      "safety_pii": 4,
+      "overall_quality": 4.5
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Includes actionable link. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 39,
+    "sample_id": 191,
+    "pair_id": 841324,
+    "customer_text": "@AmazonHelp are you kidding me, i have already done that 3 times now, they have blocked me. they dont want to answer i think",
+    "reply_text": "@191263 We would like to help you. Please share your details with us here: https://t.co/GIJyeYqKE0. We'll get in touch shortly. ^CB",
+    "ground_truth_intent": "GENERAL_INQUIRY_POLICY",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 5,
+      "tone_empathy": 4,
+      "actionability": 5,
+      "safety_pii": 4,
+      "overall_quality": 4.5
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Includes actionable link. Maintains strict PII safety over public Twitter."
+  },
+  {
+    "calibration_id": 40,
+    "sample_id": 196,
+    "pair_id": 922663,
+    "customer_text": "Ordered a washing machine as a gift to my MOTHER for Diwali. Been 3days past Diwali and I’m still waiting.@115850 @AmazonHelp @115821 https://t.co/vrMu9i2OJv",
+    "reply_text": "@339026 your order details as we consider them to be personal information. Our Twitter page is visible to the public. [2/2] ^NS",
+    "ground_truth_intent": "GENERAL_INQUIRY_POLICY",
+    "ground_truth_escalation": "ESCALATE_HUMAN",
+    "human_scores": {
+      "groundedness": 4,
+      "tone_empathy": 4,
+      "actionability": 3,
+      "safety_pii": 4,
+      "overall_quality": 3.8
+    },
+    "human_critique": "Historical Amazon reply shows adequate empathy. Directs to DM/support channel. Maintains strict PII safety over public Twitter."
+  }
+]

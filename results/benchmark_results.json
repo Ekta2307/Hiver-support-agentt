@@ -1,0 +1,1574 @@
+{
+  "execution_timestamp": "2026-09-10 00:20:22",
+  "total_test_cases": 200,
+  "total_runtime_seconds": 44.32,
+  "headline_metrics": [
+    {
+      "System": "Baseline 1 (Trivial)",
+      "Intent Acc (%)": "22.5%",
+      "Intent Macro F1": "0.061",
+      "Escalation Acc (%)": "59.0%",
+      "Escalation F1": "0.742",
+      "Escalation FNR (%)": "0.0%",
+      "Reply Semantic Sim": "0.360",
+      "Judge Groundedness (1-5)": "2.00",
+      "Judge Actionability (1-5)": "3.00",
+      "Judge Overall (1-5)": "2.65"
+    },
+    {
+      "System": "Baseline 2 (Simple)",
+      "Intent Acc (%)": "60.0%",
+      "Intent Macro F1": "0.578",
+      "Escalation Acc (%)": "60.5%",
+      "Escalation F1": "0.586",
+      "Escalation FNR (%)": "52.5%",
+      "Reply Semantic Sim": "0.338",
+      "Judge Groundedness (1-5)": "3.31",
+      "Judge Actionability (1-5)": "3.33",
+      "Judge Overall (1-5)": "3.34"
+    },
+    {
+      "System": "Proposed Agent",
+      "Intent Acc (%)": "70.5%",
+      "Intent Macro F1": "0.638",
+      "Escalation Acc (%)": "75.0%",
+      "Escalation F1": "0.813",
+      "Escalation FNR (%)": "7.6%",
+      "Reply Semantic Sim": "0.318",
+      "Judge Groundedness (1-5)": "4.98",
+      "Judge Actionability (1-5)": "4.93",
+      "Judge Overall (1-5)": "4.77"
+    }
+  ],
+  "automated_metrics": {
+    "Baseline 1 (Trivial)": {
+      "intent_classification": {
+        "accuracy": 0.225,
+        "macro_f1": 0.06122448979591837,
+        "macro_precision": 0.0375,
+        "macro_recall": 0.16666666666666666,
+        "per_intent": {
+          "ACCOUNT_BILLING_SECURITY": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 35
+          },
+          "GENERAL_INQUIRY_POLICY": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 20
+          },
+          "ORDER_DELIVERY_TRACKING": {
+            "precision": 0.225,
+            "recall": 1.0,
+            "f1": 0.3673469387755102,
+            "support": 45
+          },
+          "PRODUCT_DEVICE_TECHNICAL": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 28
+          },
+          "RETURN_REFUND_REPLACEMENT": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 38
+          },
+          "SERVICE_COMPLAINT_FEEDBACK": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 34
+          }
+        },
+        "confusion_matrix": {
+          "labels": [
+            "ACCOUNT_BILLING_SECURITY",
+            "GENERAL_INQUIRY_POLICY",
+            "ORDER_DELIVERY_TRACKING",
+            "PRODUCT_DEVICE_TECHNICAL",
+            "RETURN_REFUND_REPLACEMENT",
+            "SERVICE_COMPLAINT_FEEDBACK"
+          ],
+          "matrix": [
+            [
+              0,
+              0,
+              35,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              20,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              45,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              28,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              38,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              34,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "escalation_routing": {
+        "accuracy": 0.59,
+        "precision": 0.59,
+        "recall": 1.0,
+        "f1": 0.7421383647798742,
+        "false_negative_rate": 0.0,
+        "false_negatives": 0,
+        "confusion_matrix": [
+          [
+            0,
+            82
+          ],
+          [
+            0,
+            118
+          ]
+        ]
+      },
+      "reply_quality": {
+        "mean_semantic_similarity": 0.3598105186223984,
+        "char_length_mean": 100.0,
+        "compliance_280_chars": 1.0,
+        "pii_violation_rate": 0.0
+      }
+    },
+    "Baseline 2 (Simple)": {
+      "intent_classification": {
+        "accuracy": 0.6,
+        "macro_f1": 0.5775012775012776,
+        "macro_precision": 0.6517005211739556,
+        "macro_recall": 0.5735564401199077,
+        "per_intent": {
+          "ACCOUNT_BILLING_SECURITY": {
+            "precision": 0.9090909090909091,
+            "recall": 0.5714285714285714,
+            "f1": 0.7017543859649122,
+            "support": 35
+          },
+          "GENERAL_INQUIRY_POLICY": {
+            "precision": 0.38461538461538464,
+            "recall": 0.25,
+            "f1": 0.30303030303030304,
+            "support": 20
+          },
+          "ORDER_DELIVERY_TRACKING": {
+            "precision": 0.7741935483870968,
+            "recall": 0.5333333333333333,
+            "f1": 0.631578947368421,
+            "support": 45
+          },
+          "PRODUCT_DEVICE_TECHNICAL": {
+            "precision": 0.7647058823529411,
+            "recall": 0.4642857142857143,
+            "f1": 0.5777777777777777,
+            "support": 28
+          },
+          "RETURN_REFUND_REPLACEMENT": {
+            "precision": 0.675,
+            "recall": 0.7105263157894737,
+            "f1": 0.6923076923076923,
+            "support": 38
+          },
+          "SERVICE_COMPLAINT_FEEDBACK": {
+            "precision": 0.4025974025974026,
+            "recall": 0.9117647058823529,
+            "f1": 0.5585585585585585,
+            "support": 34
+          }
+        },
+        "confusion_matrix": {
+          "labels": [
+            "ACCOUNT_BILLING_SECURITY",
+            "GENERAL_INQUIRY_POLICY",
+            "ORDER_DELIVERY_TRACKING",
+            "PRODUCT_DEVICE_TECHNICAL",
+            "RETURN_REFUND_REPLACEMENT",
+            "SERVICE_COMPLAINT_FEEDBACK"
+          ],
+          "matrix": [
+            [
+              20,
+              2,
+              2,
+              1,
+              3,
+              7
+            ],
+            [
+              0,
+              5,
+              2,
+              2,
+              3,
+              8
+            ],
+            [
+              0,
+              1,
+              24,
+              1,
+              4,
+              15
+            ],
+            [
+              0,
+              3,
+              1,
+              13,
+              1,
+              10
+            ],
+            [
+              2,
+              1,
+              2,
+              0,
+              27,
+              6
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              2,
+              31
+            ]
+          ]
+        }
+      },
+      "escalation_routing": {
+        "accuracy": 0.605,
+        "precision": 0.7671232876712328,
+        "recall": 0.4745762711864407,
+        "f1": 0.5863874345549738,
+        "false_negative_rate": 0.5254237288135594,
+        "false_negatives": 62,
+        "confusion_matrix": [
+          [
+            65,
+            17
+          ],
+          [
+            62,
+            56
+          ]
+        ]
+      },
+      "reply_quality": {
+        "mean_semantic_similarity": 0.3384209299273789,
+        "char_length_mean": 118.3,
+        "compliance_280_chars": 1.0,
+        "pii_violation_rate": 0.005
+      }
+    },
+    "Proposed Agent": {
+      "intent_classification": {
+        "accuracy": 0.705,
+        "macro_f1": 0.6375665662543817,
+        "macro_precision": 0.6640121190634126,
+        "macro_recall": 0.6459293658984061,
+        "per_intent": {
+          "ACCOUNT_BILLING_SECURITY": {
+            "precision": 0.7,
+            "recall": 0.8,
+            "f1": 0.7466666666666667,
+            "support": 35
+          },
+          "GENERAL_INQUIRY_POLICY": {
+            "precision": 0.25,
+            "recall": 0.1,
+            "f1": 0.14285714285714285,
+            "support": 20
+          },
+          "ORDER_DELIVERY_TRACKING": {
+            "precision": 0.6779661016949152,
+            "recall": 0.8888888888888888,
+            "f1": 0.7692307692307693,
+            "support": 45
+          },
+          "PRODUCT_DEVICE_TECHNICAL": {
+            "precision": 0.875,
+            "recall": 0.5,
+            "f1": 0.6363636363636364,
+            "support": 28
+          },
+          "RETURN_REFUND_REPLACEMENT": {
+            "precision": 0.7631578947368421,
+            "recall": 0.7631578947368421,
+            "f1": 0.7631578947368421,
+            "support": 38
+          },
+          "SERVICE_COMPLAINT_FEEDBACK": {
+            "precision": 0.717948717948718,
+            "recall": 0.8235294117647058,
+            "f1": 0.7671232876712328,
+            "support": 34
+          }
+        },
+        "confusion_matrix": {
+          "labels": [
+            "ACCOUNT_BILLING_SECURITY",
+            "GENERAL_INQUIRY_POLICY",
+            "ORDER_DELIVERY_TRACKING",
+            "PRODUCT_DEVICE_TECHNICAL",
+            "RETURN_REFUND_REPLACEMENT",
+            "SERVICE_COMPLAINT_FEEDBACK"
+          ],
+          "matrix": [
+            [
+              28,
+              2,
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              8,
+              0,
+              5,
+              3
+            ],
+            [
+              0,
+              1,
+              40,
+              0,
+              1,
+              3
+            ],
+            [
+              2,
+              2,
+              6,
+              14,
+              1,
+              3
+            ],
+            [
+              5,
+              0,
+              2,
+              0,
+              29,
+              2
+            ],
+            [
+              3,
+              1,
+              0,
+              0,
+              2,
+              28
+            ]
+          ]
+        }
+      },
+      "escalation_routing": {
+        "accuracy": 0.75,
+        "precision": 0.7266666666666667,
+        "recall": 0.923728813559322,
+        "f1": 0.8134328358208955,
+        "false_negative_rate": 0.07627118644067797,
+        "false_negatives": 9,
+        "confusion_matrix": [
+          [
+            41,
+            41
+          ],
+          [
+            9,
+            109
+          ]
+        ]
+      },
+      "reply_quality": {
+        "mean_semantic_similarity": 0.31838969253003596,
+        "char_length_mean": 262.08,
+        "compliance_280_chars": 0.305,
+        "pii_violation_rate": 0.0
+      }
+    }
+  },
+  "judge_metrics": {
+    "Baseline 1 (Trivial)": {
+      "mean_groundedness": 2.0,
+      "mean_tone_empathy": 2.0,
+      "mean_actionability": 3.0,
+      "mean_safety_pii": 4.0,
+      "mean_overall_quality": 2.6499999999999995
+    },
+    "Baseline 2 (Simple)": {
+      "mean_groundedness": 3.31,
+      "mean_tone_empathy": 2.865,
+      "mean_actionability": 3.325,
+      "mean_safety_pii": 4.005,
+      "mean_overall_quality": 3.3415
+    },
+    "Proposed Agent": {
+      "mean_groundedness": 4.98,
+      "mean_tone_empathy": 4.355,
+      "mean_actionability": 4.935,
+      "mean_safety_pii": 4.75,
+      "mean_overall_quality": 4.7665
+    }
+  },
+  "human_judge_agreement": {
+    "num_calibration_samples": 40,
+    "pearson_correlation_r": 0.6413333157932237,
+    "pearson_p_value": 8.23332587977537e-06,
+    "spearman_correlation_rho": 0.6059148755466645,
+    "spearman_p_value": 3.424628228117496e-05,
+    "cohens_kappa": 0.03100775193798444,
+    "mean_absolute_error": 0.925,
+    "within_one_point_agreement_rate": 0.575,
+    "exact_integer_match_rate": 0.375,
+    "dimension_correlations": {
+      "groundedness": 0.2991616902194818,
+      "tone_empathy": 0.7874852084111084,
+      "actionability": 0.8042353914370258,
+      "safety_pii": 1.0
+    },
+    "calibration_sample_comparison": [
+      {
+        "sample_id": 1,
+        "human_overall": 4.5,
+        "judge_overall": 4.05,
+        "diff": -0.45
+      },
+      {
+        "sample_id": 6,
+        "human_overall": 4.0,
+        "judge_overall": 3.55,
+        "diff": -0.45
+      },
+      {
+        "sample_id": 11,
+        "human_overall": 4.5,
+        "judge_overall": 3.75,
+        "diff": -0.75
+      },
+      {
+        "sample_id": 16,
+        "human_overall": 4.3,
+        "judge_overall": 3.75,
+        "diff": -0.55
+      },
+      {
+        "sample_id": 21,
+        "human_overall": 4.8,
+        "judge_overall": 4.0,
+        "diff": -0.8
+      }
+    ]
+  },
+  "sample_predictions": [
+    {
+      "sample_id": 1,
+      "customer_text": "Its sooo annoying that @115821 left my package at the main office of my apts. like yall didnt deliver it yesterday when it was suppose",
+      "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+      "ground_truth_escalation": "AUTO_HANDLE",
+      "reference_reply": "@363009 Oh my Kirito!  Can you tell us who the carrier is? You can view your orders here: https://t.co/XJnbb8dfdy ^SY",
+      "proposed_agent": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.6633815935609233,
+        "intent_scores": {
+          "ORDER_DELIVERY_TRACKING": 0.6633815935609233,
+          "RETURN_REFUND_REPLACEMENT": 0.08498013167942248,
+          "ACCOUNT_BILLING_SECURITY": 0.027424245532543908,
+          "PRODUCT_DEVICE_TECHNICAL": 0.025056508428708837,
+          "SERVICE_COMPLAINT_FEEDBACK": 0.1605268202231373,
+          "GENERAL_INQUIRY_POLICY": 0.03863070057526413
+        },
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "SELF_SERVICE_TRACKING_GUIDANCE",
+        "escalation_reason_detail": "Routine shipment whereabouts resolvable by guiding customer to 'Your Orders' tracking updates.",
+        "drafted_reply": "I'm sorry to hear your package hasn't arrived as expected. You can review real-time delivery status and driver notes directly under 'Your Orders': https://amzn.to/track-package ^AI",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 103118,
+            "similarity": 0.7054998874664307,
+            "historical_customer": "my package was supposed to come today but I got an email saying that you failed to deliver it?? I don't understand since I said to leave it at the concierge",
+            "historical_reply": "I am very sorry about the troubles with your account, Megane! Let's see how we can help! Which Amazon site do you order from? ^FR"
+          },
+          {
+            "pair_id": 33272,
+            "similarity": 0.6973204612731934,
+            "historical_customer": "Got a notification from that my package was delivered 2 my neighbour even tho I'm sat @ home waiting...neighbour didn't receive it?!",
+            "historical_reply": "This is odd! Please reach out to us by phone or chat here: so we can look into this! ^KJ"
+          },
+          {
+            "pair_id": 9136,
+            "similarity": 0.6906278133392334,
+            "historical_customer": "Had a package scheduled for delivery today and it didn’t come I’m not happy",
+            "historical_reply": "I'm sorry your shipment hasn't arrived; what is the latest status on the order: ^LR"
+          }
+        ],
+        "sample_id": 1
+      },
+      "baseline_simple": {
+        "intent": "SERVICE_COMPLAINT_FEEDBACK",
+        "confidence": 0.23306816739375788,
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "NO_ESCALATION_KEYWORDS",
+        "escalation_reason_detail": "No high-risk keywords detected in customer message.",
+        "drafted_reply": "@120226 I’m sorry about the issue you’re facing with delivery. Let us look into it. (1/3)^HR",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 18903,
+            "similarity": 0.22671320192554278,
+            "historical_customer": "Dear my order #407-7208892-2195534 is suppose to deliver by 31 Oct 2017... Still not received...",
+            "historical_reply": "I’m sorry about the issue you’re facing with delivery. Let us look into it. (1/3)^HR"
+          }
+        ],
+        "sample_id": 1
+      },
+      "baseline_trivial": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 1.0,
+        "escalation_decision": "ESCALATE_HUMAN",
+        "escalation_reason_category": "TRIVIAL_DEFAULT_POLICY",
+        "escalation_reason_detail": "Trivial baseline applies a blanket escalation rule to all inbound traffic.",
+        "drafted_reply": "Thanks for reaching out! Please send us a direct message with your details so we can assist you. ^CS",
+        "retrieved_exemplars": [],
+        "sample_id": 1
+      }
+    },
+    {
+      "sample_id": 2,
+      "customer_text": "Not sure what up with @115821, but stuff is suddenly disappearing, not being delivered on time, or just seems stuck in limbo. Fire related?",
+      "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+      "ground_truth_escalation": "AUTO_HANDLE",
+      "reference_reply": "@176396 I'm sorry for the delivery troubles! Have you had a chance to report this to us: https://t.co/hApLpMlfHN? ^EP",
+      "proposed_agent": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.5022791462360829,
+        "intent_scores": {
+          "ORDER_DELIVERY_TRACKING": 0.5022791462360829,
+          "RETURN_REFUND_REPLACEMENT": 0.09180089894495944,
+          "ACCOUNT_BILLING_SECURITY": 0.05105092178257972,
+          "PRODUCT_DEVICE_TECHNICAL": 0.22868641334662007,
+          "SERVICE_COMPLAINT_FEEDBACK": 0.08007811387665796,
+          "GENERAL_INQUIRY_POLICY": 0.046104505813099855
+        },
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "SELF_SERVICE_TRACKING_GUIDANCE",
+        "escalation_reason_detail": "Routine shipment whereabouts resolvable by guiding customer to 'Your Orders' tracking updates.",
+        "drafted_reply": "I'm sorry to hear your package hasn't arrived as expected. You can review real-time delivery status and driver notes directly under 'Your Orders': https://amzn.to/track-package ^AI",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 63846,
+            "similarity": 0.5500715970993042,
+            "historical_customer": "Not perfect, but I would say it was a storage/warehouse issue. We have other items ordered. I'm in most times. I hope the same thing doesn't happen again, especially if the weather is bad.",
+            "historical_reply": "I can understand that. Please do make us aware if this issue occurs again. You can also assign a safe place in the future by using this link: ^CR"
+          },
+          {
+            "pair_id": 109775,
+            "similarity": 0.5404504537582397,
+            "historical_customer": "why does our stuff keep going missing from the littlehampton delivery truck. It's been twice now",
+            "historical_reply": "That's odd! We'd like to help, we just need a little more information. Have you had trouble with a recent order/delivery? Could you tell us more details about what's going on? ^HM"
+          },
+          {
+            "pair_id": 102941,
+            "similarity": 0.5112068057060242,
+            "historical_customer": "Dude, I've been having weird things happen with delivery lately. Will say it's out for delivery for like 4 days, or gets lost. Never had this stuff happen until like 2 mos ago",
+            "historical_reply": "Oh no! I'm sorry about the late or lost items. This isn't the experience we'd want our customers to have. Has there been a reoccurring carrier with those packages? ^GP"
+          }
+        ],
+        "sample_id": 2
+      },
+      "baseline_simple": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.23255688889901163,
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "NO_ESCALATION_KEYWORDS",
+        "escalation_reason_detail": "No high-risk keywords detected in customer message.",
+        "drafted_reply": "@122219 Was the item in stock when you placed the order? Is it currently still showing as pending shipment? ^NV",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 28428,
+            "similarity": 0.26922703354902155,
+            "historical_customer": ".to wait 1-2 days. Then nothing happens. I am stuck spending an hour re explaining it each time",
+            "historical_reply": "Was the item in stock when you placed the order? Is it currently still showing as pending shipment? ^NV"
+          }
+        ],
+        "sample_id": 2
+      },
+      "baseline_trivial": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 1.0,
+        "escalation_decision": "ESCALATE_HUMAN",
+        "escalation_reason_category": "TRIVIAL_DEFAULT_POLICY",
+        "escalation_reason_detail": "Trivial baseline applies a blanket escalation rule to all inbound traffic.",
+        "drafted_reply": "Thanks for reaching out! Please send us a direct message with your details so we can assist you. ^CS",
+        "retrieved_exemplars": [],
+        "sample_id": 2
+      }
+    },
+    {
+      "sample_id": 3,
+      "customer_text": "@115850 NOW courier DELIVERY BO HAS SWITCHED OFF THE pHONE , I hav etried to calling him on th number given in SMS",
+      "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+      "ground_truth_escalation": "AUTO_HANDLE",
+      "reference_reply": "@337623 Apologies for this. We've received your details and our team is currently working on it. ^RS",
+      "proposed_agent": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.6051813446629576,
+        "intent_scores": {
+          "ORDER_DELIVERY_TRACKING": 0.6051813446629576,
+          "RETURN_REFUND_REPLACEMENT": 0.08319073490209135,
+          "ACCOUNT_BILLING_SECURITY": 0.07294290011069471,
+          "PRODUCT_DEVICE_TECHNICAL": 0.03250303452083078,
+          "SERVICE_COMPLAINT_FEEDBACK": 0.16008088570363632,
+          "GENERAL_INQUIRY_POLICY": 0.046101100099789356
+        },
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "SELF_SERVICE_TRACKING_GUIDANCE",
+        "escalation_reason_detail": "Routine shipment whereabouts resolvable by guiding customer to 'Your Orders' tracking updates.",
+        "drafted_reply": "I'm sorry to hear your package hasn't arrived as expected. You can review real-time delivery status and driver notes directly under 'Your Orders': https://amzn.to/track-package ^AI",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 65707,
+            "similarity": 0.6629039645195007,
+            "historical_customer": "Second time waiting to hear back while investigating the courier. Please do call us back this time. Had to phone up loads to get the first non delivery sorted.",
+            "historical_reply": "Please let us know if you don't hear back regarding the investigation! ^RO"
+          },
+          {
+            "pair_id": 69718,
+            "similarity": 0.6295462846755981,
+            "historical_customer": "My order is lying at Gorakhpur hub today since 6Am but no courier boy has been assigned for delivery though it is to be delivered in center city You cant even deliver one day before. Very poor service. Flipkart do mentions 3-4 but delivers in 1-2 day. My mistek chosse amazn",
+            "historical_reply": "The package has to undergo a few more checks and scans before we hand it over to an agent for delivery. As requested earlier kindly wait until the estimates and this would be delivered at the earliest to you. ^KK"
+          },
+          {
+            "pair_id": 40418,
+            "similarity": 0.6121490001678467,
+            "historical_customer": "But i am not ready for self return because i have not arrange it my self this is headache for me so please provide from your courier service",
+            "historical_reply": "You should have received an email from us, please check and revert. ^HN"
+          }
+        ],
+        "sample_id": 3
+      },
+      "baseline_simple": {
+        "intent": "SERVICE_COMPLAINT_FEEDBACK",
+        "confidence": 0.21681767048475356,
+        "escalation_decision": "ESCALATE_HUMAN",
+        "escalation_reason_category": "KEYWORD_HEURISTIC_TRIGGERED",
+        "escalation_reason_detail": "Matched escalation keywords: phone",
+        "drafted_reply": "@120173 Kindly reply to the email that we've sent. We'll investigate this further. ^SG",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 18703,
+            "similarity": 0.2716817779703952,
+            "historical_customer": "It says wrong product has sent .. refund cannot be given ... u kindly ask ur courier guy n confirm me what was given to him ..",
+            "historical_reply": "Kindly reply to the email that we've sent. We'll investigate this further. ^SG"
+          }
+        ],
+        "sample_id": 3
+      },
+      "baseline_trivial": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 1.0,
+        "escalation_decision": "ESCALATE_HUMAN",
+        "escalation_reason_category": "TRIVIAL_DEFAULT_POLICY",
+        "escalation_reason_detail": "Trivial baseline applies a blanket escalation rule to all inbound traffic.",
+        "drafted_reply": "Thanks for reaching out! Please send us a direct message with your details so we can assist you. ^CS",
+        "retrieved_exemplars": [],
+        "sample_id": 3
+      }
+    },
+    {
+      "sample_id": 4,
+      "customer_text": "@AmazonHelp I typed the delivery address in wrong. Was told by fedex via amazon customer service that delivery would happen today. That wasn't true.",
+      "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+      "ground_truth_escalation": "AUTO_HANDLE",
+      "reference_reply": "@296457 I'm sorry the order hasn't been delivered! What's the most recent tracking update on the order: https://t.co/Y5jpI9gRhE? ^EP",
+      "proposed_agent": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.592724895774114,
+        "intent_scores": {
+          "ORDER_DELIVERY_TRACKING": 0.592724895774114,
+          "RETURN_REFUND_REPLACEMENT": 0.057217476938937625,
+          "ACCOUNT_BILLING_SECURITY": 0.0760314087101293,
+          "PRODUCT_DEVICE_TECHNICAL": 0.04125096870550814,
+          "SERVICE_COMPLAINT_FEEDBACK": 0.09008853148609895,
+          "GENERAL_INQUIRY_POLICY": 0.14268671838521194
+        },
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "SELF_SERVICE_TRACKING_GUIDANCE",
+        "escalation_reason_detail": "Routine shipment whereabouts resolvable by guiding customer to 'Your Orders' tracking updates.",
+        "drafted_reply": "I'm sorry to hear your package hasn't arrived as expected. You can review real-time delivery status and driver notes directly under 'Your Orders': https://amzn.to/track-package ^AI",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 105258,
+            "similarity": 0.7036617994308472,
+            "historical_customer": "Called your help line who then changed the delivery to today (30th November). I was guaranteed delivery today by the supervisor on the phone. order has yet to be out for delivery on the account. On the account it says delivery today but also states the 29th",
+            "historical_reply": "I understand your frustration! Deliveries can be made until 21:00. Please let us know if it doesn't arrive. ^SJ"
+          },
+          {
+            "pair_id": 23967,
+            "similarity": 0.6933975219726562,
+            "historical_customer": "I have sent an email as the same thing happened to me today. The delivery attempt was never made.",
+            "historical_reply": "For the fastest resolution, please reach us directly by choosing \"phone\" or \"chat\" when using RS's link, above. ^JR"
+          },
+          {
+            "pair_id": 107292,
+            "similarity": 0.6872693300247192,
+            "historical_customer": "Every now and then I get texts from Amazon saying \"your order will be delivered by DPD on ...\" I didn't order anything, yet on that day I'm wondering where the fuck is my delivery and nothing turns up 😠",
+            "historical_reply": "Hi Harry, thanks for reaching out to us today! Since we don't have account access via Twitter could you reach out to us by phone here: We'd be happy to look into this for you! ^AZ"
+          }
+        ],
+        "sample_id": 4
+      },
+      "baseline_simple": {
+        "intent": "SERVICE_COMPLAINT_FEEDBACK",
+        "confidence": 0.26027702772517247,
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "NO_ESCALATION_KEYWORDS",
+        "escalation_reason_detail": "No high-risk keywords detected in customer message.",
+        "drafted_reply": "@123663 I apologize for any inconvenience. I hope you will be able to take advantage of our future promotions. ^EB",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 35190,
+            "similarity": 0.33038984781549297,
+            "historical_customer": "It wasn’t! That I could see!",
+            "historical_reply": "I apologize for any inconvenience. I hope you will be able to take advantage of our future promotions. ^EB"
+          }
+        ],
+        "sample_id": 4
+      },
+      "baseline_trivial": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 1.0,
+        "escalation_decision": "ESCALATE_HUMAN",
+        "escalation_reason_category": "TRIVIAL_DEFAULT_POLICY",
+        "escalation_reason_detail": "Trivial baseline applies a blanket escalation rule to all inbound traffic.",
+        "drafted_reply": "Thanks for reaching out! Please send us a direct message with your details so we can assist you. ^CS",
+        "retrieved_exemplars": [],
+        "sample_id": 4
+      }
+    },
+    {
+      "sample_id": 5,
+      "customer_text": "@AmazonHelp Did this over chat but no help. Poor English responses and indifferent attitude. 50 minutes to get to 'problem with carrier'.",
+      "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+      "ground_truth_escalation": "AUTO_HANDLE",
+      "reference_reply": "@337287 Was the agent able to offer any options? If so, what was advised? Did they reschedule the delivery for you? Keep us posted! ^FR",
+      "proposed_agent": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.35831300823058737,
+        "intent_scores": {
+          "ORDER_DELIVERY_TRACKING": 0.35831300823058737,
+          "RETURN_REFUND_REPLACEMENT": 0.13485427545314604,
+          "ACCOUNT_BILLING_SECURITY": 0.12658101044467648,
+          "PRODUCT_DEVICE_TECHNICAL": 0.09453979045633715,
+          "SERVICE_COMPLAINT_FEEDBACK": 0.23400238035279175,
+          "GENERAL_INQUIRY_POLICY": 0.05170953506246113
+        },
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "SELF_SERVICE_TRACKING_GUIDANCE",
+        "escalation_reason_detail": "Routine shipment whereabouts resolvable by guiding customer to 'Your Orders' tracking updates.",
+        "drafted_reply": "I'm sorry to hear your package hasn't arrived as expected. You can review real-time delivery status and driver notes directly under 'Your Orders': https://amzn.to/track-package ^AI",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 124807,
+            "similarity": 0.6872714757919312,
+            "historical_customer": "It's not my carrier. It's yours. Why then I have to take it up with them and as well not my fault when you are not connected with the customer success team and systems. This is Interesting",
+            "historical_reply": "Have we had a chance to contact USPS on your behalf when you spoke with our support team? ^WM"
+          },
+          {
+            "pair_id": 52221,
+            "similarity": 0.6233710646629333,
+            "historical_customer": "For the 5th time I've called after their carriers have failed to give a disable customer [me] enough time to reach the door",
+            "historical_reply": "I'm sorry to hear about the delivery trouble! We'd like to help the best we can. Who's the carrier listed for your order? ^HC"
+          },
+          {
+            "pair_id": 6956,
+            "similarity": 0.612592339515686,
+            "historical_customer": "Will do in morning. By the way, I’ve complained about this same issue 3 times and twice before directly to carrier.",
+            "historical_reply": "When you have a moment, please phone us here: ^RR"
+          }
+        ],
+        "sample_id": 5
+      },
+      "baseline_simple": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.19329448044871203,
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "NO_ESCALATION_KEYWORDS",
+        "escalation_reason_detail": "No high-risk keywords detected in customer message.",
+        "drafted_reply": "@120177 Thanks for confirming, Aletta! Please contact us here: https://t.co/233GuUIPkP either by phone or chat so that we can review at the order level. Over social media, we don't have the access needed. We'll be ready to help as soon as you contact. ^TM",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 18732,
+            "similarity": 0.23661339509761484,
+            "historical_customer": "The carrier is USPS.",
+            "historical_reply": "Thanks for confirming, Aletta! Please contact us here: either by phone or chat so that we can review at the order level. Over social media, we don't have the access needed. We'll be ready to help as soon as you contact. ^TM"
+          }
+        ],
+        "sample_id": 5
+      },
+      "baseline_trivial": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 1.0,
+        "escalation_decision": "ESCALATE_HUMAN",
+        "escalation_reason_category": "TRIVIAL_DEFAULT_POLICY",
+        "escalation_reason_detail": "Trivial baseline applies a blanket escalation rule to all inbound traffic.",
+        "drafted_reply": "Thanks for reaching out! Please send us a direct message with your details so we can assist you. ^CS",
+        "retrieved_exemplars": [],
+        "sample_id": 5
+      }
+    },
+    {
+      "sample_id": 6,
+      "customer_text": "@115850 My order 171-4078604-8109968\nIs not been delivered to me, the committed date was 13th october 2017. Support is good for nothing.",
+      "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+      "ground_truth_escalation": "AUTO_HANDLE",
+      "reference_reply": "@350548 Please don't provide your order details, we consider it to be personal information. Our page is visible to the public. ^KA",
+      "proposed_agent": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.5891170898365956,
+        "intent_scores": {
+          "ORDER_DELIVERY_TRACKING": 0.5891170898365956,
+          "RETURN_REFUND_REPLACEMENT": 0.13428226044589656,
+          "ACCOUNT_BILLING_SECURITY": 0.12488593267622458,
+          "PRODUCT_DEVICE_TECHNICAL": 0.026214899071103717,
+          "SERVICE_COMPLAINT_FEEDBACK": 0.07075940554461242,
+          "GENERAL_INQUIRY_POLICY": 0.054740412425567056
+        },
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "SELF_SERVICE_TRACKING_GUIDANCE",
+        "escalation_reason_detail": "Routine shipment whereabouts resolvable by guiding customer to 'Your Orders' tracking updates.",
+        "drafted_reply": "I'm sorry to hear your package hasn't arrived as expected. You can review real-time delivery status and driver notes directly under 'Your Orders': https://amzn.to/track-package ^AI",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 18903,
+            "similarity": 0.7898732423782349,
+            "historical_customer": "Dear my order #407-7208892-2195534 is suppose to deliver by 31 Oct 2017... Still not received...",
+            "historical_reply": "I’m sorry about the issue you’re facing with delivery. Let us look into it. (1/3)^HR"
+          },
+          {
+            "pair_id": 33299,
+            "similarity": 0.7893080711364746,
+            "historical_customer": "My order number: 171-2623585-5777153 is not yet delivered. This is the third time I am facing the problem",
+            "historical_reply": "Truly sorry about that, Akshay. Please report this to our support team here: and we'll assist you. ^NK"
+          },
+          {
+            "pair_id": 31309,
+            "similarity": 0.7584825754165649,
+            "historical_customer": "I didn't receive my order yet. Delivery date is 30th Oct. Order I'd 408-2620150-2527537. Customer care commitment is not met.",
+            "historical_reply": "Please don't provide your order details, we consider it to be personal information. Our page is visible to public. (2/2)^RI"
+          }
+        ],
+        "sample_id": 6
+      },
+      "baseline_simple": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.21208235771336023,
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "NO_ESCALATION_KEYWORDS",
+        "escalation_reason_detail": "No high-risk keywords detected in customer message.",
+        "drafted_reply": "@120931 Please don't provide your order details, we consider it to be personal information. Our page is visible to the public. 2/2^SC",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 22570,
+            "similarity": 0.3771101008413693,
+            "historical_customer": "Ordered on 7 October 2017 Order# 403-7284574-6433108 not yet delivered. No way to cancel and get refund.",
+            "historical_reply": "Please don't provide your order details, we consider it to be personal information. Our page is visible to the public. 2/2^SC"
+          }
+        ],
+        "sample_id": 6
+      },
+      "baseline_trivial": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 1.0,
+        "escalation_decision": "ESCALATE_HUMAN",
+        "escalation_reason_category": "TRIVIAL_DEFAULT_POLICY",
+        "escalation_reason_detail": "Trivial baseline applies a blanket escalation rule to all inbound traffic.",
+        "drafted_reply": "Thanks for reaching out! Please send us a direct message with your details so we can assist you. ^CS",
+        "retrieved_exemplars": [],
+        "sample_id": 6
+      }
+    },
+    {
+      "sample_id": 7,
+      "customer_text": "#AmazonIndia#VERY PATHETIC SERVICE BY AMAZON# my order supposed to delivered on 20th October but still not getting any response#😡😡",
+      "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+      "ground_truth_escalation": "AUTO_HANDLE",
+      "reference_reply": "@350443 I'm sorry about the delay in delivering your order. Have you reported this to our support team at https://t.co/vlvfJr4nN9? ^SB",
+      "proposed_agent": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.37986583567151494,
+        "intent_scores": {
+          "ORDER_DELIVERY_TRACKING": 0.37986583567151494,
+          "RETURN_REFUND_REPLACEMENT": 0.15012329529074186,
+          "ACCOUNT_BILLING_SECURITY": 0.1505551813183377,
+          "PRODUCT_DEVICE_TECHNICAL": 0.05677709068523177,
+          "SERVICE_COMPLAINT_FEEDBACK": 0.13401902949550554,
+          "GENERAL_INQUIRY_POLICY": 0.12865956753866822
+        },
+        "escalation_decision": "ESCALATE_HUMAN",
+        "escalation_reason_category": "REPEATED_FAILURE_OR_HIGH_FRUSTRATION",
+        "escalation_reason_detail": "High customer distress, repeat unresolved contacts, or demand for supervisory escalation.",
+        "drafted_reply": "I'm sorry to hear your package hasn't arrived as expected. For your privacy and security, we cannot access private account details over Twitter. Please connect directly with our specialized support team via our secure portal so we can investigate right away: https://amzn.to/contact-us ^AI",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 61046,
+            "similarity": 0.7599477171897888,
+            "historical_customer": "#AmazonIndia worst service. Almost a month has passed but my refund still not processed. Executive are giving fake assurance every time when I call them. They say that I am handling your concern from now and when I call next time the new one say may I know your problem.",
+            "historical_reply": "I’m sorry about this experience. Please share your details here: and I'll get in touch with you. ^MK"
+          },
+          {
+            "pair_id": 35910,
+            "similarity": 0.7416157722473145,
+            "historical_customer": "#AmazonIndia what would reaching out that to end of day would do..Better try to get this atleast delivered today. That would be more helpful",
+            "historical_reply": "email ID. Kindly check it here: 2/2 ^RS"
+          },
+          {
+            "pair_id": 50761,
+            "similarity": 0.7410315275192261,
+            "historical_customer": "Why hasn’t my Amazon order been dispatched yet 😩📦",
+            "historical_reply": "Sorry for the delay! We aim to deliver by the date given in your order confirmation e-mail. Have we missed that date? ^TK"
+          }
+        ],
+        "sample_id": 7
+      },
+      "baseline_simple": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.20068269226898458,
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "NO_ESCALATION_KEYWORDS",
+        "escalation_reason_detail": "No high-risk keywords detected in customer message.",
+        "drafted_reply": "@120696 I understand your concern. Kindly fill in your details through the link provided earlier &amp; we'll contact you soon. ^SY",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 21501,
+            "similarity": 0.47888166471195304,
+            "historical_customer": "Pathetic service from Amazon...",
+            "historical_reply": "I understand your concern. Kindly fill in your details through the link provided earlier &amp; we'll contact you soon. ^SY"
+          }
+        ],
+        "sample_id": 7
+      },
+      "baseline_trivial": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 1.0,
+        "escalation_decision": "ESCALATE_HUMAN",
+        "escalation_reason_category": "TRIVIAL_DEFAULT_POLICY",
+        "escalation_reason_detail": "Trivial baseline applies a blanket escalation rule to all inbound traffic.",
+        "drafted_reply": "Thanks for reaching out! Please send us a direct message with your details so we can assist you. ^CS",
+        "retrieved_exemplars": [],
+        "sample_id": 7
+      }
+    },
+    {
+      "sample_id": 8,
+      "customer_text": "@AmazonHelp There were 2 separate orders 408-1929729-8238743 and 408-0714060-7645942. Both were Delayed. i have added my details as suggested",
+      "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+      "ground_truth_escalation": "AUTO_HANDLE",
+      "reference_reply": "@306104 Also, please don't provide your order/account details as we consider them to be personal information. ^HK",
+      "proposed_agent": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.41755042376770063,
+        "intent_scores": {
+          "ORDER_DELIVERY_TRACKING": 0.41755042376770063,
+          "RETURN_REFUND_REPLACEMENT": 0.13444563063040374,
+          "ACCOUNT_BILLING_SECURITY": 0.20701784541896803,
+          "PRODUCT_DEVICE_TECHNICAL": 0.04156780203730298,
+          "SERVICE_COMPLAINT_FEEDBACK": 0.11652411024328944,
+          "GENERAL_INQUIRY_POLICY": 0.08289418790233527
+        },
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "SELF_SERVICE_TRACKING_GUIDANCE",
+        "escalation_reason_detail": "Routine shipment whereabouts resolvable by guiding customer to 'Your Orders' tracking updates.",
+        "drafted_reply": "I'm sorry to hear your package hasn't arrived as expected. You can review real-time delivery status and driver notes directly under 'Your Orders': https://amzn.to/track-package ^AI",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 38564,
+            "similarity": 0.6764631271362305,
+            "historical_customer": "Order has been delayed multiple times",
+            "historical_reply": "Oh no! I'm so sorry for any inconvenience that may have caused. Just to confirm, which Amazon site did you use to place your order ( Amazon.es, etc.)? We'd like to help in any way we can! ^BL"
+          },
+          {
+            "pair_id": 31840,
+            "similarity": 0.6292765736579895,
+            "historical_customer": "one order was suppose to be delivered by 30th october , still no tracking available for the same as on 1/11/17",
+            "historical_reply": "team here: and we'll sort this for you at the earliest. 2/2 ^KH"
+          },
+          {
+            "pair_id": 114447,
+            "similarity": 0.6223167181015015,
+            "historical_customer": "&amp; again happening with my 2nd order.My order no. is 405-7015545-3145145. I contacted 3 times to CC but it still showing not yet dispatched.",
+            "historical_reply": "Please don't provide your order number, we consider it to be personal information. Our Twitter page is visible to the public. ^MP 2/2"
+          }
+        ],
+        "sample_id": 8
+      },
+      "baseline_simple": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.19289642993348105,
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "NO_ESCALATION_KEYWORDS",
+        "escalation_reason_detail": "No high-risk keywords detected in customer message.",
+        "drafted_reply": "@120402 We'd like to help you with your query. Kindly contact our support team here: https://t.co/vlvfJrlYEH. (1/2) ^ZH",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 20042,
+            "similarity": 0.5158344634228522,
+            "historical_customer": "order no #408-984423-033528 need sS",
+            "historical_reply": "We'd like to help you with your query. Kindly contact our support team here: (1/2) ^ZH"
+          }
+        ],
+        "sample_id": 8
+      },
+      "baseline_trivial": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 1.0,
+        "escalation_decision": "ESCALATE_HUMAN",
+        "escalation_reason_category": "TRIVIAL_DEFAULT_POLICY",
+        "escalation_reason_detail": "Trivial baseline applies a blanket escalation rule to all inbound traffic.",
+        "drafted_reply": "Thanks for reaching out! Please send us a direct message with your details so we can assist you. ^CS",
+        "retrieved_exemplars": [],
+        "sample_id": 8
+      }
+    },
+    {
+      "sample_id": 9,
+      "customer_text": "@AmazonHelp I am not there to take instructions from you. It was your fault that you didn't provide documents to courier. Do the needful now.",
+      "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+      "ground_truth_escalation": "AUTO_HANDLE",
+      "reference_reply": "@333870 received from our team and we will respond on the same. (2/2) ^GK",
+      "proposed_agent": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.4895481410024469,
+        "intent_scores": {
+          "ORDER_DELIVERY_TRACKING": 0.4895481410024469,
+          "RETURN_REFUND_REPLACEMENT": 0.171653889636077,
+          "ACCOUNT_BILLING_SECURITY": 0.08688188612134343,
+          "PRODUCT_DEVICE_TECHNICAL": 0.03834958243334042,
+          "SERVICE_COMPLAINT_FEEDBACK": 0.1527970324870467,
+          "GENERAL_INQUIRY_POLICY": 0.0607694683197455
+        },
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "SELF_SERVICE_TRACKING_GUIDANCE",
+        "escalation_reason_detail": "Routine shipment whereabouts resolvable by guiding customer to 'Your Orders' tracking updates.",
+        "drafted_reply": "I'm sorry to hear your package hasn't arrived as expected. You can review real-time delivery status and driver notes directly under 'Your Orders': https://amzn.to/track-package ^AI",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 40418,
+            "similarity": 0.6670557260513306,
+            "historical_customer": "But i am not ready for self return because i have not arrange it my self this is headache for me so please provide from your courier service",
+            "historical_reply": "You should have received an email from us, please check and revert. ^HN"
+          },
+          {
+            "pair_id": 65707,
+            "similarity": 0.6272213459014893,
+            "historical_customer": "Second time waiting to hear back while investigating the courier. Please do call us back this time. Had to phone up loads to get the first non delivery sorted.",
+            "historical_reply": "Please let us know if you don't hear back regarding the investigation! ^RO"
+          },
+          {
+            "pair_id": 86149,
+            "similarity": 0.6167479753494263,
+            "historical_customer": "It was the first thing I did, but there wasn’t any further info. Not it says the parcel is prepared for delivery later today, hopefully. Thanks very much.",
+            "historical_reply": "We'd like to make sure that your order arrives to you safe and sound, please keep us posted on this delivery! ^FR"
+          }
+        ],
+        "sample_id": 9
+      },
+      "baseline_simple": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.2153408228951508,
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "NO_ESCALATION_KEYWORDS",
+        "escalation_reason_detail": "No high-risk keywords detected in customer message.",
+        "drafted_reply": "@123355 Please don’t provide your order details as we consider them to be personal info. Our page is visible to public. ^SG(2/2)",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 33280,
+            "similarity": 0.2909252235348382,
+            "historical_customer": "order no. 408-9613915-0161138 Just one question, what is my fault in all this and you are telling me policies",
+            "historical_reply": "Please don’t provide your order details as we consider them to be personal info. Our page is visible to public. ^SG(2/2)"
+          }
+        ],
+        "sample_id": 9
+      },
+      "baseline_trivial": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 1.0,
+        "escalation_decision": "ESCALATE_HUMAN",
+        "escalation_reason_category": "TRIVIAL_DEFAULT_POLICY",
+        "escalation_reason_detail": "Trivial baseline applies a blanket escalation rule to all inbound traffic.",
+        "drafted_reply": "Thanks for reaching out! Please send us a direct message with your details so we can assist you. ^CS",
+        "retrieved_exemplars": [],
+        "sample_id": 9
+      }
+    },
+    {
+      "sample_id": 10,
+      "customer_text": "@AmazonHelp No and no;the estimated delivery date is useless because only going to be in the us a few hours. The package was “guaranteed” for yesterday",
+      "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+      "ground_truth_escalation": "AUTO_HANDLE",
+      "reference_reply": "@358096 Who was the carrier for your order? Please check here: https://t.co/qA9aY76Xwe ^MB",
+      "proposed_agent": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.7337976211956638,
+        "intent_scores": {
+          "ORDER_DELIVERY_TRACKING": 0.7337976211956638,
+          "RETURN_REFUND_REPLACEMENT": 0.0367759768109891,
+          "ACCOUNT_BILLING_SECURITY": 0.024592696289894973,
+          "PRODUCT_DEVICE_TECHNICAL": 0.014063918461505509,
+          "SERVICE_COMPLAINT_FEEDBACK": 0.03424914100432241,
+          "GENERAL_INQUIRY_POLICY": 0.15652064623762418
+        },
+        "escalation_decision": "ESCALATE_HUMAN",
+        "escalation_reason_category": "REPEATED_FAILURE_OR_HIGH_FRUSTRATION",
+        "escalation_reason_detail": "High customer distress, repeat unresolved contacts, or demand for supervisory escalation.",
+        "drafted_reply": "I'm sorry to hear your package hasn't arrived as expected. For your privacy and security, we cannot access private account details over Twitter. Please connect directly with our specialized support team via our secure portal so we can investigate right away: https://amzn.to/contact-us ^AI",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 64041,
+            "similarity": 0.715421736240387,
+            "historical_customer": "Yes, but I also received a new (incorrect) delivery date on Monday. I spent a few hours on the phone with UPS today, maybe tomorrow will be different. I'm not concerned with the delay itself, I am with the inaccuracy. Don't call it an guarantee if it's gonna take 2x as long.",
+            "historical_reply": "Thanks for keeping us informed. Please keep us posted about the delivery tomorrow and let us know if there are any further issues.^PJ"
+          },
+          {
+            "pair_id": 59542,
+            "similarity": 0.7110854387283325,
+            "historical_customer": "no it just says it will be delivered today",
+            "historical_reply": "If your order hasn't arrived by tomorrow at 21:00, please contact us here for available options: ^LR"
+          },
+          {
+            "pair_id": 93681,
+            "similarity": 0.6891680955886841,
+            "historical_customer": "Yes, but this is becoming unacceptable. Every other order from you is late. Spoke to a rep and saw that one part of my order was available via but wouldn’t schedule the delivery for today.",
+            "historical_reply": "When your package are being delayed are you noticing that it is with a certain carrier? We would like to help in any way possible! ^LS"
+          }
+        ],
+        "sample_id": 10
+      },
+      "baseline_simple": {
+        "intent": "SERVICE_COMPLAINT_FEEDBACK",
+        "confidence": 0.2378302459870063,
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "NO_ESCALATION_KEYWORDS",
+        "escalation_reason_detail": "No high-risk keywords detected in customer message.",
+        "drafted_reply": "@119702 My apologies. What is the latest update on the tracking?: https://t.co/Y5jpI9gRhE ^PK",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 16830,
+            "similarity": 0.461354159193193,
+            "historical_customer": "My guaranteed delivery date was Monday.",
+            "historical_reply": "My apologies. What is the latest update on the tracking?: ^PK"
+          }
+        ],
+        "sample_id": 10
+      },
+      "baseline_trivial": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 1.0,
+        "escalation_decision": "ESCALATE_HUMAN",
+        "escalation_reason_category": "TRIVIAL_DEFAULT_POLICY",
+        "escalation_reason_detail": "Trivial baseline applies a blanket escalation rule to all inbound traffic.",
+        "drafted_reply": "Thanks for reaching out! Please send us a direct message with your details so we can assist you. ^CS",
+        "retrieved_exemplars": [],
+        "sample_id": 10
+      }
+    },
+    {
+      "sample_id": 11,
+      "customer_text": "@AmazonHelp It says “delivered in mailbox” for all three books.  NOT in mailbox.  Very urgent that I get these books",
+      "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+      "ground_truth_escalation": "AUTO_HANDLE",
+      "reference_reply": "@349328 We don't have acct access via Twitter, so please contact us here so we can address this together: https://t.co/hApLpMlfHN ^KN",
+      "proposed_agent": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.3409402944373891,
+        "intent_scores": {
+          "ORDER_DELIVERY_TRACKING": 0.3409402944373891,
+          "RETURN_REFUND_REPLACEMENT": 0.22523380673899063,
+          "ACCOUNT_BILLING_SECURITY": 0.07675780526417977,
+          "PRODUCT_DEVICE_TECHNICAL": 0.07869751216656089,
+          "SERVICE_COMPLAINT_FEEDBACK": 0.09388968845090279,
+          "GENERAL_INQUIRY_POLICY": 0.18448089294197692
+        },
+        "escalation_decision": "ESCALATE_HUMAN",
+        "escalation_reason_category": "LOW_CONFIDENCE_AMBIGUOUS_QUERY",
+        "escalation_reason_detail": "Classification confidence (0.34) is below threshold (0.35). Safe fallback to human triage.",
+        "drafted_reply": "I'm sorry to hear your package hasn't arrived as expected. For your privacy and security, we cannot access private account details over Twitter. Please connect directly with our specialized support team via our secure portal so we can investigate right away: https://amzn.to/contact-us ^AI",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 9779,
+            "similarity": 0.6321520805358887,
+            "historical_customer": "I seem to have bad luck in trying to get undamaged books from . Sometimes it's damaged in delivery, but this one was packed this way.",
+            "historical_reply": "I'm sorry about the damage, Raymond! Have you explored options for refund/replacement here: ^SH"
+          },
+          {
+            "pair_id": 25258,
+            "similarity": 0.5934203267097473,
+            "historical_customer": "I purchased a book on the 8th October and still hasn’t come and is now past its delivery deadline?",
+            "historical_reply": "Oh no! I'm sorry your book is late, Meghan. Is it coming from us or a seller? Info here: ^BL"
+          },
+          {
+            "pair_id": 26917,
+            "similarity": 0.5877963304519653,
+            "historical_customer": "Pre ordered a book and treated myself to another book, neither have even dispatched! The order is still at will dispatch on 22nd Oct.",
+            "historical_reply": "When you placed the order what was the stated delivery date? You can quickly check from here: ^CH"
+          }
+        ],
+        "sample_id": 11
+      },
+      "baseline_simple": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.21936099853278948,
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "NO_ESCALATION_KEYWORDS",
+        "escalation_reason_detail": "No high-risk keywords detected in customer message.",
+        "drafted_reply": "@124652 We'd like check this for you. Please fill this form: https://t.co/beaaDm0muc and we'll look into it. ^MO",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 39578,
+            "similarity": 0.41001261315746157,
+            "historical_customer": "I did. It keeps happening to me. I mostly buy books, and my books end up looking like old books or they come damaged.",
+            "historical_reply": "We'd like check this for you. Please fill this form: and we'll look into it. ^MO"
+          }
+        ],
+        "sample_id": 11
+      },
+      "baseline_trivial": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 1.0,
+        "escalation_decision": "ESCALATE_HUMAN",
+        "escalation_reason_category": "TRIVIAL_DEFAULT_POLICY",
+        "escalation_reason_detail": "Trivial baseline applies a blanket escalation rule to all inbound traffic.",
+        "drafted_reply": "Thanks for reaching out! Please send us a direct message with your details so we can assist you. ^CS",
+        "retrieved_exemplars": [],
+        "sample_id": 11
+      }
+    },
+    {
+      "sample_id": 12,
+      "customer_text": "@AmazonHelp @115850 What more do I have to do? Just to expect one item delivered on time?",
+      "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+      "ground_truth_escalation": "AUTO_HANDLE",
+      "reference_reply": "@300095 Sorry for the hassle, kindly revert to the correspondence which you have received from us and we will assist you further. ^SM",
+      "proposed_agent": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.5601299254639004,
+        "intent_scores": {
+          "ORDER_DELIVERY_TRACKING": 0.5601299254639004,
+          "RETURN_REFUND_REPLACEMENT": 0.13828067814713021,
+          "ACCOUNT_BILLING_SECURITY": 0.027850640666762135,
+          "PRODUCT_DEVICE_TECHNICAL": 0.023753067216312228,
+          "SERVICE_COMPLAINT_FEEDBACK": 0.1296613965555101,
+          "GENERAL_INQUIRY_POLICY": 0.12032429195038494
+        },
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "SELF_SERVICE_TRACKING_GUIDANCE",
+        "escalation_reason_detail": "Routine shipment whereabouts resolvable by guiding customer to 'Your Orders' tracking updates.",
+        "drafted_reply": "I'm sorry to hear your package hasn't arrived as expected. You can review real-time delivery status and driver notes directly under 'Your Orders': https://amzn.to/track-package ^AI",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 19426,
+            "similarity": 0.6851820945739746,
+            "historical_customer": "How can you keep the item status as delivered without reaching us, and telling us to wait for it?",
+            "historical_reply": "I'm sorry for the incorrect tracking update. Kindly reach out to us here: and we will fix this for you. ^AH"
+          },
+          {
+            "pair_id": 24477,
+            "similarity": 0.653556227684021,
+            "historical_customer": "once again can you tell me why my one day delivery items haven’t even been dispatched yet and are supposed to be here today?",
+            "historical_reply": "Hi Sian, orders are often dispatched &amp; delivered on the same day, as our carriers deliver until 9pm. ^TS"
+          },
+          {
+            "pair_id": 77606,
+            "similarity": 0.637967050075531,
+            "historical_customer": "Ask your executive Mr.Pathan, How can I return the item while its not delivered. He will suffer me again at that time if delivery of new order. Even, You totally failed on your Promise and now taking 2x time. Really.... 3rd Class Resolution",
+            "historical_reply": "Please don't provide your order details, we consider it to be personal information. Our page is visible to the public. (2/2) ^MO"
+          }
+        ],
+        "sample_id": 12
+      },
+      "baseline_simple": {
+        "intent": "RETURN_REFUND_REPLACEMENT",
+        "confidence": 0.2200011625404663,
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "NO_ESCALATION_KEYWORDS",
+        "escalation_reason_detail": "No high-risk keywords detected in customer message.",
+        "drafted_reply": "@123345 We'd like to have a closer look. Could you please contact our support team through : https://t.co/2t6DQoUmNZ? ^PR",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 33209,
+            "similarity": 0.32152897338556613,
+            "historical_customer": "A ordered was cancelled on 30th october, by what time I can expect Amazon pay balance?",
+            "historical_reply": "We'd like to have a closer look. Could you please contact our support team through : ^PR"
+          }
+        ],
+        "sample_id": 12
+      },
+      "baseline_trivial": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 1.0,
+        "escalation_decision": "ESCALATE_HUMAN",
+        "escalation_reason_category": "TRIVIAL_DEFAULT_POLICY",
+        "escalation_reason_detail": "Trivial baseline applies a blanket escalation rule to all inbound traffic.",
+        "drafted_reply": "Thanks for reaching out! Please send us a direct message with your details so we can assist you. ^CS",
+        "retrieved_exemplars": [],
+        "sample_id": 12
+      }
+    },
+    {
+      "sample_id": 13,
+      "customer_text": "This is the 3rd time Amazon has delayed my shipment or not delivered it on time. 😡",
+      "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+      "ground_truth_escalation": "AUTO_HANDLE",
+      "reference_reply": "@290384 So sorry for the delay! Was this item sold by Amazon or one of our sellers? Who's the carrier: https://t.co/Y5jpI9gRhE ^JZ",
+      "proposed_agent": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.6238562148457459,
+        "intent_scores": {
+          "ORDER_DELIVERY_TRACKING": 0.6238562148457459,
+          "RETURN_REFUND_REPLACEMENT": 0.12216285365608937,
+          "ACCOUNT_BILLING_SECURITY": 0.05852508192965559,
+          "PRODUCT_DEVICE_TECHNICAL": 0.03695692336417183,
+          "SERVICE_COMPLAINT_FEEDBACK": 0.06676220809969739,
+          "GENERAL_INQUIRY_POLICY": 0.09173671810463997
+        },
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "SELF_SERVICE_TRACKING_GUIDANCE",
+        "escalation_reason_detail": "Routine shipment whereabouts resolvable by guiding customer to 'Your Orders' tracking updates.",
+        "drafted_reply": "I'm sorry to hear your package hasn't arrived as expected. You can review real-time delivery status and driver notes directly under 'Your Orders': https://amzn.to/track-package ^AI",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 76095,
+            "similarity": 0.7260254621505737,
+            "historical_customer": "There is nothing worse than checking your order on amazon and seeing “Delayed” next to it 😩😩😩",
+            "historical_reply": "Oh no! We're sorry to hear that your package was delayed Michelle. Have you received an e-mail with an updated delivery date? It may have been routed to a junk/spam folder as sometimes happens. Keep us posted, we're here to help any way we can! ^AZ"
+          },
+          {
+            "pair_id": 18148,
+            "similarity": 0.6974908709526062,
+            "historical_customer": "I gave it another day and still not delivered. 😡",
+            "historical_reply": "I'm so sorry for the trouble. If you have a moment, please contact us by phone or chat here: ^LH"
+          },
+          {
+            "pair_id": 50761,
+            "similarity": 0.6811378002166748,
+            "historical_customer": "Why hasn’t my Amazon order been dispatched yet 😩📦",
+            "historical_reply": "Sorry for the delay! We aim to deliver by the date given in your order confirmation e-mail. Have we missed that date? ^TK"
+          }
+        ],
+        "sample_id": 13
+      },
+      "baseline_simple": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.2084096207811885,
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "NO_ESCALATION_KEYWORDS",
+        "escalation_reason_detail": "No high-risk keywords detected in customer message.",
+        "drafted_reply": "@120469 Sorry for the confusion. Please reply to the email sent by our team earlier &amp; we'll update you on this. ^RS",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 20454,
+            "similarity": 0.31503635845314504,
+            "historical_customer": "How many time I send detail.??",
+            "historical_reply": "Sorry for the confusion. Please reply to the email sent by our team earlier &amp; we'll update you on this. ^RS"
+          }
+        ],
+        "sample_id": 13
+      },
+      "baseline_trivial": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 1.0,
+        "escalation_decision": "ESCALATE_HUMAN",
+        "escalation_reason_category": "TRIVIAL_DEFAULT_POLICY",
+        "escalation_reason_detail": "Trivial baseline applies a blanket escalation rule to all inbound traffic.",
+        "drafted_reply": "Thanks for reaching out! Please send us a direct message with your details so we can assist you. ^CS",
+        "retrieved_exemplars": [],
+        "sample_id": 13
+      }
+    },
+    {
+      "sample_id": 14,
+      "customer_text": "@AmazonHelp delivery date was for today by 9pm &amp; latest tracking update was “package has left seller facility and is in transit to carrier” at 12:33pm",
+      "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+      "ground_truth_escalation": "AUTO_HANDLE",
+      "reference_reply": "@129212 Thanks for confirming. Using the previous link, can you also provide which carrier was assigned to the order? ^BH",
+      "proposed_agent": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.9617902593761453,
+        "intent_scores": {
+          "ORDER_DELIVERY_TRACKING": 0.9617902593761453,
+          "RETURN_REFUND_REPLACEMENT": 0.008016202804814541,
+          "ACCOUNT_BILLING_SECURITY": 0.004310614326173433,
+          "PRODUCT_DEVICE_TECHNICAL": 0.002861480438381379,
+          "SERVICE_COMPLAINT_FEEDBACK": 0.007943559908441694,
+          "GENERAL_INQUIRY_POLICY": 0.015077883146043792
+        },
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "SELF_SERVICE_TRACKING_GUIDANCE",
+        "escalation_reason_detail": "Routine shipment whereabouts resolvable by guiding customer to 'Your Orders' tracking updates.",
+        "drafted_reply": "I'm sorry to hear your package hasn't arrived as expected. You can review real-time delivery status and driver notes directly under 'Your Orders': https://amzn.to/track-package ^AI",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 89123,
+            "similarity": 0.7390686273574829,
+            "historical_customer": "ETA for delivery changed to next Tuesday/Wednesday. please check the DM for order details. Thnx in Adv.",
+            "historical_reply": "We've responded to you over DM kindly check and reply. ^MN"
+          },
+          {
+            "pair_id": 67566,
+            "similarity": 0.7282440662384033,
+            "historical_customer": "Shows as ‘on its way’ and only having left carrier depot at 9.40pm this evening. Delivery is by Amazon Logistics. App still shows the delivery date as today but when I go through the support section of the app it tells me scheduled delivery is tomorrow (30th)",
+            "historical_reply": "Hi, If the parcel is not with you by the 30th, please do let us know Here are some safe place options if you are not available for the delivery: ^CR"
+          },
+          {
+            "pair_id": 83481,
+            "similarity": 0.6988071799278259,
+            "historical_customer": "hi I have been tracking my parcel and it says delivered at 11:30pm last night but I definitely did not get a delivery. Help",
+            "historical_reply": "Hello, Anika! Thank you for reaching out! I'm sorry you have not received your parcel yet. Have you checked the locations suggested in this link? Let us know! ^MW"
+          }
+        ],
+        "sample_id": 14
+      },
+      "baseline_simple": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 0.2876681275069572,
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "NO_ESCALATION_KEYWORDS",
+        "escalation_reason_detail": "No high-risk keywords detected in customer message.",
+        "drafted_reply": "@118235 I'd like someone from my team to check into this. When you can, please drop your details here: https://t.co/jNvrqbIPwn ^BL",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 11606,
+            "similarity": 0.2870996909201933,
+            "historical_customer": "Carrier: AMZL US, Tracking #: TBA516106123000",
+            "historical_reply": "I'd like someone from my team to check into this. When you can, please drop your details here: ^BL"
+          }
+        ],
+        "sample_id": 14
+      },
+      "baseline_trivial": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 1.0,
+        "escalation_decision": "ESCALATE_HUMAN",
+        "escalation_reason_category": "TRIVIAL_DEFAULT_POLICY",
+        "escalation_reason_detail": "Trivial baseline applies a blanket escalation rule to all inbound traffic.",
+        "drafted_reply": "Thanks for reaching out! Please send us a direct message with your details so we can assist you. ^CS",
+        "retrieved_exemplars": [],
+        "sample_id": 14
+      }
+    },
+    {
+      "sample_id": 15,
+      "customer_text": "@AmazonHelp Sir now as your investigation is complete and it is proved that it's company's mistake so now I want compensation with the delivery of the laptop .As i have faced lot of inconvenience and beared mental tension due to your fault..",
+      "ground_truth_intent": "ORDER_DELIVERY_TRACKING",
+      "ground_truth_escalation": "AUTO_HANDLE",
+      "reference_reply": "@326830 Please be assured, we'll get back to you at the earliest. ^HN",
+      "proposed_agent": {
+        "intent": "RETURN_REFUND_REPLACEMENT",
+        "confidence": 0.30063693431518457,
+        "intent_scores": {
+          "ORDER_DELIVERY_TRACKING": 0.12883579137904078,
+          "RETURN_REFUND_REPLACEMENT": 0.30063693431518457,
+          "ACCOUNT_BILLING_SECURITY": 0.20652640008190395,
+          "PRODUCT_DEVICE_TECHNICAL": 0.10847654501485114,
+          "SERVICE_COMPLAINT_FEEDBACK": 0.19177579600287,
+          "GENERAL_INQUIRY_POLICY": 0.06374853320614958
+        },
+        "escalation_decision": "ESCALATE_HUMAN",
+        "escalation_reason_category": "LOW_CONFIDENCE_AMBIGUOUS_QUERY",
+        "escalation_reason_detail": "Classification confidence (0.30) is below threshold (0.35). Safe fallback to human triage.",
+        "drafted_reply": "I'm sorry your item arrived in less than perfect condition. For your privacy and security, we cannot access private account details over Twitter. Please connect directly with our specialized support team via our secure portal so we can investigate right away: https://amzn.to/contact-us ^AI",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 96682,
+            "similarity": 0.6438429355621338,
+            "historical_customer": "Please stop cheating customers by delivering old products. Bought a new laptop this week whose warranty is valid only for 290 days instead of a year.. Order id 405-5462082-7360357.. NEED REFUND..",
+            "historical_reply": "Please don't share your order details as we consider it to be personal information. Our Twitter page is visible to public. 2/2 ^KH"
+          },
+          {
+            "pair_id": 26963,
+            "similarity": 0.6296375393867493,
+            "historical_customer": "Not yet, have tried to contact the seller several times and no response. Not got access to a laptop to further the complaint at the moment",
+            "historical_reply": "We want to help out! So when you have the ability to contact us, here's a link to reach out: ^MJ"
+          },
+          {
+            "pair_id": 77344,
+            "similarity": 0.5577201843261719,
+            "historical_customer": "I have reported the issue to u now it shuld be ur responsibility to take it further not making ur customer to go here n there to report ur mistakes and pathetic support.",
+            "historical_reply": "I understand your concern regarding the delivery. However, we have a dedicated team to assist you regarding this, request you to reach out to our support team using the link provided earlier. In case of any further concerns, feel free to get in touch with us. ^GD"
+          }
+        ],
+        "sample_id": 15
+      },
+      "baseline_simple": {
+        "intent": "SERVICE_COMPLAINT_FEEDBACK",
+        "confidence": 0.23416587786191478,
+        "escalation_decision": "AUTO_HANDLE",
+        "escalation_reason_category": "NO_ESCALATION_KEYWORDS",
+        "escalation_reason_detail": "No high-risk keywords detected in customer message.",
+        "drafted_reply": "@124279 We'd like to take a closer look at this with you. Please reach us via phone/chat here: https://t.co/JzP7hlA23B ^KP",
+        "retrieved_exemplars": [
+          {
+            "pair_id": 38125,
+            "similarity": 0.2834173807015915,
+            "historical_customer": "£6 is a lot for me rn",
+            "historical_reply": "We'd like to take a closer look at this with you. Please reach us via phone/chat here: ^KP"
+          }
+        ],
+        "sample_id": 15
+      },
+      "baseline_trivial": {
+        "intent": "ORDER_DELIVERY_TRACKING",
+        "confidence": 1.0,
+        "escalation_decision": "ESCALATE_HUMAN",
+        "escalation_reason_category": "TRIVIAL_DEFAULT_POLICY",
+        "escalation_reason_detail": "Trivial baseline applies a blanket escalation rule to all inbound traffic.",
+        "drafted_reply": "Thanks for reaching out! Please send us a direct message with your details so we can assist you. ^CS",
+        "retrieved_exemplars": [],
+        "sample_id": 15
+      }
+    }
+  ]
+}
